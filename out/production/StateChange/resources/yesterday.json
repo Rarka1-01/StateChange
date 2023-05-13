@@ -1,0 +1,12 @@
+{
+"http://first.com":"<head><title>One</title><body><h2>This is first html-page</h2></body></head>",
+"http://second.com":"<head><title>Two</title><body><h2>This is second html-page</h2></body></head>",
+"http://third.com":"<head><title>Three</title><body><h2>This is third html-page</h2></body></head>",
+"http://fourth.com":"<head><title>Four</title><body><h2>This is fourth html-page</h2></body></head>",
+"http://fifth.com":"<head><title>Five</title><body><h2>This is fifth html-page</h2></body></head>",
+"http://sixth.com":"<head><title>Six</title><body><h2>This is sixth html-page</h2></body></head>",
+"http://seventh.com":"<head><title>Seven</title><body><h2>This is seventh html-page</h2></body></head>",
+"http://eighth.com":"<head><title>Eight</title><body><h2>This is eighth html-page</h2></body></head>",
+"http://ninth.com":"<head><title>Nine</title><body><h2>This is ninth html-page</h2></body></head>",
+"http://tenth.com":"<head><title>Ten</title><body><h2>This is tenth html-page</h2></body></head>"
+}
