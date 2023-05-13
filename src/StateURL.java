@@ -19,7 +19,8 @@ public class StateURL {
 
     public void updateTodaySitesFromJson(String pathTodaySites) throws IOException {
 
-        this.yesterdaySites = this.todaySites;
+        this.yesterdaySites = (Hashtable<String, String>) this.todaySites.clone();
+        this.todaySites.clear();
         this.loadTodaySitesFromJson(pathTodaySites);
 
     }

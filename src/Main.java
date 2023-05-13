@@ -13,7 +13,12 @@ public class Main {
 
             mc.createMail(state);
 
-        }catch (IOException e){
+            Thread.sleep(5000);
+
+            state.updateTodaySitesFromJson("src/resources/tomorrow.json");
+            mc.createMail(state);
+
+        }catch (Exception e){
 
             System.out.println(e.getMessage());
         }
