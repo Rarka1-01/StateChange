@@ -73,7 +73,7 @@ public class StateURL {
 
     private void loadYesterdaySitesFromJson(String pathYesterdaySites) throws IOException {
 
-        FileReader reader = new FileReader(new File(pathYesterdaySites));
+        FileReader reader = new FileReader(pathYesterdaySites);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String line = bufferedReader.readLine(); //read "{"
         line = bufferedReader.readLine();
@@ -87,7 +87,7 @@ public class StateURL {
 
     private void loadTodaySitesFromJson(String pathTodaySites) throws IOException {
 
-        FileReader reader = new FileReader(new File(pathTodaySites));
+        FileReader reader = new FileReader(pathTodaySites);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String line = bufferedReader.readLine(); //read "{"
         line = bufferedReader.readLine();

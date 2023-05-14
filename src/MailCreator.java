@@ -27,18 +27,18 @@ public class MailCreator {
         FileWriter writer = new FileWriter(file);
         writer.write("Здравствуйте, дорогая " + this.nameSecretary + "\n\n");
         writer.write("За последние сутки во вверенных Вам сайтах произошли следующие изменения:\n\n");
-        this.addToMail(writer, "Исчезли следующие страницы:", disappeared);
-        this.addToMail(writer, "Появились следующие новые страницы:", appeared);
-        this.addToMail(writer, "Изменились следующие страницы:", change);
+        this.addToMailWithFormat(writer, "Исчезли следующие страницы:", disappeared);
+        this.addToMailWithFormat(writer, "Появились следующие новые страницы:", appeared);
+        this.addToMailWithFormat(writer, "Изменились следующие страницы:", change);
         writer.write("\n\nС уважением,\n" +
                 "автоматизированная система\n" +
                 "мониторинга.");
         writer.flush();
-        writer.close();
 
+        writer.close();
     }
 
-    private void addToMail(FileWriter writer, String message, ArrayList<String> values) throws IOException {
+    private void addToMailWithFormat(FileWriter writer, String message, ArrayList<String> values) throws IOException {
 
         writer.write(message + "\n");
 

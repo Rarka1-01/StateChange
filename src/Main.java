@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void test(){
 
         MailCreator mc = new MailCreator("src/outMessage/", "Надежда Ивановна");
 
@@ -23,6 +23,10 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+    }
+
+    public static void main(String[] args) {
+       test();
     }
 
 }
